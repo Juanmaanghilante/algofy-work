@@ -1,0 +1,56 @@
+<%- include('./partials/head.ejs') %>
+
+   <%- include('./partials/header.ejs') %>
+
+
+
+
+      <body>
+         <section class="estilo">
+            <main>
+               <section class="heroS">
+                  <div class="content">
+                     <h1>Juan Martin Anghilante</h1>
+                     <h2>"Almost graduated in marketing and intermediate-level programmer."</h2>
+                     <p class="turro">Hello, thank you for the opportunity. About me, I am a passionate programming
+                        student eager to learn and take on new challenges. Currently, I am in the second-to-last year of
+                        my Digital Marketing degree program. Some time ago, this no longer posed a challenge for me, so
+                        I started with programming over a year ago. As of today, I have gained full stack knowledge and
+                        expertise in technologies for both front-end and back-end development, including the following
+                     </p>
+                     <button class="b1">change me!</button>
+                  </div>
+
+               </section>
+               <section class="heroS">
+                  <div class="content">
+
+                     <section class="heroS">
+                        <main>
+                           <h1>
+                              <%=proyectos.name%>
+                           </h1>
+
+                           <%proyectos.forEach (proyecto=>{ %>
+
+                              <h1>
+                                 <%=proyecto.name%>
+                              </h1>
+                              <ul class="turro">
+                                 <%=proyecto.description%>
+                              </ul>
+                              <a href=" <%=proyecto.url%>" target="_blank">repositorio gIthub</a>
+
+                              <% }) %>
+
+                           
+                        </main>
+                     </section>
+
+                  </div>
+               </section>
+            </main>
+         </section>
+         <script src="./js/script.js"></script>
+         <%- include('./partials/footer.ejs') %>
+      </body>

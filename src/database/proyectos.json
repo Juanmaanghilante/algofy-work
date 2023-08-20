@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Mercado Liebre",
+        "url": "https://github.com/Juanmaanghilante/nuevo-mercadoliebre",
+        "description": "Hare market imitating project, to practice html and css mvc structure",
+        "image":"../images/images.jpg",
+        "isBorrado":false
+    },
+    {
+        "id": 2,
+        "name": "Impact x",
+        "url": "https://github.com/Juanmaanghilante/Grupo-3-ImpactX",
+        "description": "Project with scrum methodology for development of business idea 'Technology services company' applied back end and front end.",
+        "image":"../images/images.jpg",
+        "isBorrado":false
+    },
+    {
+        "id": 3,
+        "name": "vistas dinamicas",
+        "url":"https://github.com/Juanmaanghilante/vistasdinamicas",
+        "description": "practice of dynamic views",
+        "image":"../images/images.jpg",
+        "isBorrado":false
+    },
+    {
+        "id": 4,
+        "name": "Moives",
+        "url":"https://github.com/Juanmaanghilante/movies",
+        "description": "front end js practice, connection with database and rest api for crud own api consumption.",
+        "image":"../images/images.jpg",
+        "isBorrado":false
+    }
+]

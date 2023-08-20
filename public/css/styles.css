@@ -1,0 +1,286 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+  color: #0c0b0b;
+  text-shadow: -1px 1px 0 #fff;
+  min-height: 100vh;
+ 
+height:100%;
+display: flex;
+flex-direction: column;
+
+ background: url('../images/tecnoligia.jpg'); 
+ animation: slideBackground 20s linear infinite, changeColor 10s linear infinite; 
+
+background-size:auto;
+justify-content: space-between;
+
+}
+@keyframes slideBackground {
+  0% {
+      background-position: 50% 0%;
+  }
+  100% {
+      background-position: 50% 100%;
+  }}
+@keyframes changeColor {
+  0% {
+      color: #0c0b0b; /* Color inicial */
+  }
+  50% {
+      color: #131010; /* Color intermedio */
+  }
+  100% {
+      color: #0c0b0b; /* Color final */
+  }
+}
+
+
+
+
+
+/* js about */
+.aboutt:hover{
+color: #ac1010;
+cursor: pointer;
+}
+.aboutt{
+  text-align: center;
+}
+
+
+
+
+/* main */
+ 
+.main{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+    .heroS {
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    
+  }
+  
+  .heroS::before {
+      content: "";
+    
+      opacity: 0.8;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+      filter: blur(1px); 
+  }
+  .content p{
+    text-overflow: ellipsis;
+  white-space:nowrap;
+
+  overflow: hidden;
+  }
+/* js */
+
+.aboutDiv{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+  
+}
+
+
+
+
+  
+  .content {
+    margin-top:30px;
+    margin-bottom:30px;  
+    position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 20px;
+      background-color:rgba(255,255 ,255 , 0.5);
+      width: 70%;
+      border-radius: 40px;
+    
+  }
+  
+   /* Enlaces de navegación */
+
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0; }
+  .logo img {
+    height: 40px;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #ac1010;
+  }
+
+
+
+.heroS2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content-container {
+  display: flex;
+  background-color:rgba(255,255 ,255 , 0.5);
+  width: 90%;
+  border-radius: 40px;
+justify-content: space-around;
+}
+
+.content2 {
+  
+  padding: 200px;
+  margin: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  flex: 1;
+}
+
+.content2 h1 {
+  margin-bottom: 10px;
+}
+.ule{
+height: 0px;
+overflow: hidden;
+}
+ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+.heroS2::before {
+  content: "";
+  
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(1px); 
+}
+
+
+
+
+  /* footer */
+  .footer {
+   
+ 
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  
+
+  }
+  .footer p:hover {
+    color: #093480;}
+  
+  .footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  } 
+
+
+/* contacto */
+  .heroScontact {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 585px;
+}
+
+.heroScontact::before {
+    content: "";
+    background-image: url('./images/images.jpg');
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    filter: blur(1px); 
+}
+
+
+
+
+
+
+
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      margin-top: 10px;
+    }
+  
+    .nav-links li {
+      margin-bottom: 10px;
+    }
+    .navbar-content,
+    .footer-content {
+      max-width: 90%;}
+  }
